@@ -1,0 +1,245 @@
+nav {
+  background: #212121;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.menu {
+  padding: 18px 51px 18px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item {
+  padding-right: 28px;
+  border-right: 2px dotted #000;
+}
+
+.menu__item:last-child {
+  padding-right: 0px;
+  border-right: none;
+}
+
+.menu__link {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.subheader {
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  padding: 21px 0 17px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 150;
+  margin-top: 51px;
+}
+
+.subheader-logo__desc {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  opacity: 0.6;
+  margin-top: 6px;
+  line-height: 13px;
+}
+
+.subheader-contact__text {
+  display: block;
+  font-size: 12px;
+  font-weight: 100;
+  color: #fff;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.subheader-contact__phone {
+  display: block;
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+  text-align: right;
+}
+
+.subheader-btn {
+  margin-left: 16px;
+}
+
+.promo {
+  position: relative;
+  min-height: 800px;
+  padding: 195px 0 135px 0;
+  background: url("../img/main_bg.jpg") no-repeat center center/cover;
+  z-index: 1;
+  color: #fff;
+}
+
+.promo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.promo__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.promo__subtitle {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.promo-desc {
+  text-align: center;
+}
+
+.promo-desc__text {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 29px;
+  line-height: 23px;
+}
+
+.promo-desc__text:last-child {
+  margin-bottom: 114px;
+}
+
+.promo__btn {
+  width: 259px !important;
+  height: 63px !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.reasons {
+  padding: 70px 0 67px 0;
+}
+
+.reasons__label {
+  margin-bottom: 30px !important;
+}
+
+.reasons__title {
+  margin-bottom: 28px;
+}
+
+.reasons__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 29px;
+}
+
+.reasons-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  min-width: 114px;
+  height: 114px;
+  background: #1EACC7;
+  margin-right: 26px;
+  text-align: center;
+}
+
+.reasons-content {
+  width: 348px;
+}
+
+.reasons-content__title {
+  font-size: 17px;
+  color: #1EACC7;
+  font-weight: 400;
+  line-height: 19px;
+  margin-bottom: 5px;
+}
+
+.reasons-content__text {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 172px;
+  height: 46px;
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.label {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 9px 15px;
+  margin: 0 auto;
+  width: 120px;
+  background: #000;
+}
+/*# sourceMappingURL=style.css.map */
