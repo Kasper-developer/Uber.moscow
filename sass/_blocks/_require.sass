@@ -1,0 +1,52 @@
+.require
+	padding: 67px 0 83px 0
+	&__label
+		margin-bottom: 33px !important
+	&__title
+	&-wrapper
+		margin: 33px 0 33px 0
+		&__mb
+			margin-bottom: 0
+		&__ml
+			margin-left: 15px	
+	&-list
+		padding-left: 50px
+		&__title
+			color: $primary
+			font-size: 20px
+			font-weight: 400
+			margin-bottom: 15px
+	&__item
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		margin-bottom: 10px
+		position: relative
+		&:last-child
+			margin-bottom: 0
+		&::after
+			content: ''
+			display: block
+			width: 25px
+			height: 21px
+			position: absolute
+			top: 3px
+			left: -35px
+			text-align: center
+			background: url('../img/require/check_blue.png') no-repeat
+	&__desc
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		color: #1ca8c3
+		width: 478px
+		margin-top: 20px
+
+.warning
+	.require
+		&-list
+			&__title
+				color: $secondary
+		&__item
+			&::after
+				background: url('../img/require/check_red.png') no-repeat

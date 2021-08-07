@@ -1,9 +1,10 @@
+@import '_blocks/colors'
 @import '_blocks/header'
 @import '_blocks/promo'
 @import '_blocks/reasons'
 @import '_blocks/app'
 @import '_blocks/choise'
-@import '_blocks/requirements'
+@import '_blocks/require'
 @import '_blocks/world'
 @import '_blocks/footer'
 
@@ -18,13 +19,15 @@ body
 	width: 172px
 	height: 46px
 	box-shadow: inset 0 -3px 0 rgba(0,0 ,0 , 0.12)
-	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+	background-image: linear-gradient(to top, $primary 0%, #4ce2ff 100%)
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
 	color: #fff
 	text-transform: uppercase
 	font-size: 14px
 	font-weight: 400
 	border-radius: 5px
+	&:hover
+		background-image: linear-gradient(to top, #1789a0 0%, #4ce2ff 100%)
 
 .title
 	font-size: 38px
@@ -32,6 +35,12 @@ body
 	color: #222222
 	text-transform: uppercase
 	text-align: center
+
+.subtitle
+	font-size: 17px
+	color: #222222
+	text-align: center
+	font-weight: 400
 .label
 	color: #fff
 	text-transform: uppercase
@@ -41,3 +50,7 @@ body
 	margin: 0 auto
 	width: 120px
 	background: #000
+	text-align: center
+	&--white
+		background: #fff
+		color: #000
