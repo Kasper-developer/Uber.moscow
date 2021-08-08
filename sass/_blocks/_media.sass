@@ -103,7 +103,7 @@
 		&__item
 			padding: 0
 			border: none
-			margin: 15px 0
+			margin: 12px 0
 		&__link
 			font-size: 16px
 	.hamburger
@@ -186,12 +186,32 @@
 				margin-right: 10px
 				&:last-child
 					margin-right: 0
+	.button
+		&:hover
+			background-image: linear-gradient(to top, $primary 0%, #4ce2ff 100%) !important
+	.icon
+		&-facebook,
+		&-twitter,
+		&-linkedin,
+		&-instagram
+			&:hover
+				color: #fff
+	.world
+		&__more
+			&:hover
+				color: #1FBAD6
 @media screen and ( max-width: 575px )
 	.container
 		max-width: 95%
 		margin: 0 auto
 	.menu
 		width: 100%
+		&__item
+			width: 100%
+			text-align: center
+		&__link
+			display: block
+			padding: 5px 0
 	.title
 		font-size: 26px !important
 	.subheader

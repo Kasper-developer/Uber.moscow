@@ -792,7 +792,7 @@ nav {
   .menu__item {
     padding: 0;
     border: none;
-    margin: 15px 0;
+    margin: 12px 0;
   }
   .menu__link {
     font-size: 16px;
@@ -920,6 +920,16 @@ nav {
   .footer-download__link:last-child {
     margin-right: 0;
   }
+  .button:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1EACC7), to(#4ce2ff)) !important;
+    background-image: linear-gradient(to top, #1EACC7 0%, #4ce2ff 100%) !important;
+  }
+  .icon-facebook:hover, .icon-twitter:hover, .icon-linkedin:hover, .icon-instagram:hover {
+    color: #fff;
+  }
+  .world__more:hover {
+    color: #1FBAD6;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -929,6 +939,14 @@ nav {
   }
   .menu {
     width: 100%;
+  }
+  .menu__item {
+    width: 100%;
+    text-align: center;
+  }
+  .menu__link {
+    display: block;
+    padding: 5px 0;
   }
   .title {
     font-size: 26px !important;
