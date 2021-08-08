@@ -4,6 +4,7 @@ nav
 	position: fixed
 	z-index: 100
 	width: 100%
+	height: 50px
 .menu
 	padding: 18px 51px 18px 70px
 	display: flex
@@ -20,7 +21,10 @@ nav
 		font-weight: 300
 		&:hover
 			color: $primary
-
+.hamburger
+	display: none
+.xs-visible
+	display: none !important
 .subheader
 	position: absolute
 	width: 100%
@@ -29,8 +33,8 @@ nav
 	display: flex
 	align-items: center
 	background: rgba(0, 0, 0, .6)
-	z-index: 150
-	margin-top: 51px
+	z-index: 90
+	margin-top: 50px
 	&-logo
 		&__link
 		&__desc

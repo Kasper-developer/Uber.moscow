@@ -1,5 +1,16 @@
 .footer
+	position: relative
 	padding: 50px 22px 39px 23px
+	&__divider
+		background: #1FBAD6
+		height: 5px
+		width: 300px
+		text-align: center
+		margin: 0 auto
+		position: absolute
+		left: 50%
+		top: 15px
+		transform: translateX(-50%)
 	&-wrapper
 		display: flex
 		justify-content: space-between
@@ -23,19 +34,6 @@
 			height: 33px
 			border-radius: 100%
 			background: #000
-	&-nav
-		position: relative
-		&::before
-			content: ''
-			display: block
-			background: #1FBAD6
-			width: 300px
-			margin: 0 auto
-			height: 5px
-			position: absolute
-			top: -36px
-			left: 50%
-			transform: translateX(-50%)
 	&-first
 		display: flex
 		justify-content: center
@@ -84,3 +82,10 @@
 		&__image
 			max-width: 100%
 			height: 30px
+.icon
+	&-facebook,
+	&-twitter,
+	&-linkedin,
+	&-instagram
+		&:hover
+			color: $primary

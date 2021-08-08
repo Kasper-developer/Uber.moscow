@@ -22,31 +22,36 @@
 			<div class="container">
 				<ul class="menu">
 					<li class="menu__item">
-						<a href="#" class="menu__link">Главная</a>
+						<a href="#app" class="menu__link">Главная</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Со своим автомобилем </a>
+						<a href="#own" class="menu__link">Со своим автомобилем </a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link"> На автомобиле компании</a>
+						<a href="#company" class="menu__link"> На автомобиле компании</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Требования</a>
+						<a href="#require" class="menu__link">Требования</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Контакты</a>
+						<a href="#contact" class="menu__link">Контакты</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link">Оставить заявку</a>
+						<a href="#application" class="menu__link">Оставить заявку</a>
 					</li>
 				</ul>
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 			</div>
 			<!-- /.container -->
 		</nav>
 		<div class="subheader">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-4 offset-md-1">
+				<div class="row d-sm-flex align-items-sm-center">
+					<div class="col-6 col-md-4 offset-md-1">
 						<div class="subheader-logo">
 							<a href="#" class="subheader-logo__link">
 								<img src="img/logo.png" alt="Image: Logo">
@@ -54,14 +59,15 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-2 offset-md-2">
+					<div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
 						<div class="subheader-contact">
 							<span class="subheader-contact__text">Звоните нам ежедневно</span>
 							<a href="tel:8 495 797 09 88" class="subheader-contact__phone">8 495 797 09 88</a>
 						</div>
 					</div>
-					<div class="col-md-2">
-						<button class="button subheader-btn">заказать звонок</button>
+					<div class="col-6 col-md-3">
+						<a href="tel:8 495 797 09 88" class="xs-visible subheader-contact__phone">8 495 797 09 88</a>
+						<button class="button subheader-btn" id="application">заказать звонок</button>
 					</div>
 				</div>
 				<!-- /.row -->
@@ -73,7 +79,7 @@
 	<section class="promo">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 offset-md-1">
+				<div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
 					<h1 class="promo__title">КОМПАНИЯ UBER PARTNERS!</h1>
 					<h2 class="promo__subtitle">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
 					<div class="promo-desc">
@@ -209,7 +215,7 @@
 		<!-- /.container -->
 	</section>
 
-	<section class="app">
+	<section class="app" id="app">
 		<div class="container">
 			<div class="label app__label">Возможности</div>
 			<h2 class="app__title title">мобильное приложение убер</h2>
@@ -268,13 +274,13 @@
 		<!-- /.container -->
 	</section>
 
-	<section class="require">
+	<section class="require" id="require">
 		<div class="container">
 			<div class="label require__label">Возможности</div>
 			<h2 class="title require__title">условия и требования</h2>
 
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6" id="own">
 					<div class="require-wrapper">
 						<h3 class="require-list__title">УСЛОВИЯ: со своим авто:</h3>
 						<ul class="require-list">
@@ -289,7 +295,7 @@
 						<p class="require__desc">В день заработок составляет 7000-12000р + бонус 3000т рублей</p>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" id="company">
 					<div class="require-wrapper require-wrapper__ml">
 						<h3 class="require-list__title">УСЛОВИЯ: на авто компании:</h3>
 						<ul class="require-list">
@@ -341,9 +347,10 @@
 	</section>
 
 	<footer class="footer">
+		<div class="footer__divider"></div>
 		<div class="footer-wrapper">
 			<div>
-				<div class="footer-social">
+				<div class="footer-social" id="contact">
 					<a href="#" class="footer-social__link">
 						<span class="icon-facebook"></span>
 					</a>
