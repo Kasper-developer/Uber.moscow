@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>UBER</title>
@@ -21,22 +22,22 @@
 		<nav>
 			<div class="container">
 				<ul class="menu">
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="100">
 						<a href="#app" class="menu__link">Главная</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="200">
 						<a href="#own" class="menu__link">Со своим автомобилем </a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="300">
 						<a href="#company" class="menu__link"> На автомобиле компании</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="400">
 						<a href="#require" class="menu__link">Требования</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="500">
 						<a href="#contact" class="menu__link">Контакты</a>
 					</li>
-					<li class="menu__item">
+					<li class="menu__item" data-aos="fade-down" data-aos-delay="600">
 						<a href="#application" class="menu__link">Оставить заявку</a>
 					</li>
 				</ul>
@@ -52,7 +53,7 @@
 			<div class="container">
 				<div class="row d-sm-flex align-items-sm-center">
 					<div class="col-6 col-md-4 offset-md-1">
-						<div class="subheader-logo">
+						<div class="subheader-logo" data-aos="zoom-in" data-aos-delay="100">
 							<a href="#" class="subheader-logo__link">
 								<img src="img/logo.png" alt="Image: Logo">
 								<span class="subheader-logo__desc">Официальный партнер Uber в Москве</span>
@@ -60,14 +61,14 @@
 						</div>
 					</div>
 					<div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
-						<div class="subheader-contact">
+						<div class="subheader-contact" data-aos="zoom-in" data-aos-delay="200">
 							<span class="subheader-contact__text">Звоните нам ежедневно</span>
 							<a href="tel:8 495 797 09 88" class="subheader-contact__phone">8 495 797 09 88</a>
 						</div>
 					</div>
-					<div class="col-6 col-md-3">
+					<div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
 						<a href="tel:8 495 797 09 88" class="xs-visible subheader-contact__phone">8 495 797 09 88</a>
-						<button class="button subheader-btn" id="application">заказать звонок</button>
+						<button class="button subheader-btn" id="application" data-btn='offer'>заказать звонок</button>
 					</div>
 				</div>
 				<!-- /.row -->
@@ -80,19 +81,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
-					<h1 class="promo__title">КОМПАНИЯ UBER PARTNERS!</h1>
-					<h2 class="promo__subtitle">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
+					<h1 class="promo__title" data-aos="zoom-in" data-aos-delay="100">КОМПАНИЯ UBER PARTNERS!</h1>
+					<h2 class="promo__subtitle" data-aos="zoom-in" data-aos-delay="150">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
 					<div class="promo-desc">
-						<p class="promo-desc__text">Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее
+						<p class="promo-desc__text" data-aos="zoom-in" data-aos-delay="200">Компания UBER динамически развивающаяся.
+							Компания на рынке занимает лидирующее
 							место среди
 							таксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в
 							личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы за
 							пиковое время.</p>
-						<p class="promo-desc__text">Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе
+						<p class="promo-desc__text" data-aos="zoom-in" data-aos-delay="250">Мы одни из партнеров и зарекомендовали
+							себя как одна из лучших команд в городе
 							Москве.
 							Водители у нас зарабатывают от 80000- 120000 в месяц.</p>
 					</div>
-					<button class="button promo__btn">Отправить заявку!</button>
+					<button class="button promo__btn" data-aos="zoom-in" data-aos-delay="30" data-btn='offer'>Отправить заявку!</button>
 				</div>
 			</div>
 		</div>
@@ -101,10 +104,10 @@
 
 	<section class="reasons">
 		<div class="container">
-			<div class="label reasons__label">Преимущества</div>
-			<h2 class="reasons__title title">8 причин начать работать с нами</h2>
+			<div class="label reasons__label" data-aos="zoom-in" data-aos-delay="100">Преимущества</div>
+			<h2 class="reasons__title title" data-aos="zoom-in" data-aos-delay="200">8 причин начать работать с нами</h2>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/card_icon.png" alt="Image: Reason">
@@ -118,7 +121,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="200">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/bonus_icon.png" alt="Image: Reason">
@@ -131,7 +134,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/money_icon.png" alt="Image: Reason">
@@ -144,7 +147,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/time_icon.png" alt="Image: Reason">
@@ -157,7 +160,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="500">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/key_icon.png" alt="Image: Reason">
@@ -171,7 +174,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="600">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/location_icon.png" alt="Image: Reason">
@@ -185,7 +188,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="700">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/phone_icon.png" alt="Image: Reason">
@@ -198,7 +201,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="800">
 					<div class="reasons__wrapper">
 						<div class="reasons-image">
 							<img class="reasons-image__content" src="img/reasons/car_icon.png" alt="Image: Reason">
@@ -217,42 +220,43 @@
 
 	<section class="app" id="app">
 		<div class="container">
-			<div class="label app__label">Возможности</div>
-			<h2 class="app__title title">мобильное приложение убер</h2>
-			<h3 class="app__subtitle subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой
+			<div class="label app__label" data-aos="zoom-in" data-aos-delay="100">Возможности</div>
+			<h2 class="app__title title" data-aos="zoom-in" data-aos-delay="200">мобильное приложение убер</h2>
+			<h3 class="app__subtitle subtitle" data-aos="zoom-in" data-aos-delay="300">Сделайте заказ, совершите поездку и
+				оплатите ее стоимость, используя свой
 				мобильный телефон</h3>
 			<div class="row d-flex justify-content-between">
-				<div class="col-md-4 app-item app-item__1">
+				<div class="col-md-4 app-item app-item__1" data-aos="fade-right" data-aos-delay="100">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">оформление заказа одним касанием</h3>
 						<div class="app-item__image"></div>
 					</div>
 				</div>
-				<div class="col-md-4 app-item app-item__2">
+				<div class="col-md-4 app-item app-item__2" data-aos="fade-right" data-aos-delay="200">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">надежная подача</h3>
 						<div class="app-item__image"></div>
 					</div>
 				</div>
-				<div class="col-md-4 app-item app-item__3">
+				<div class="col-md-4 app-item app-item__3" data-aos="fade-right" data-aos-delay="300">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">прозрачные цены</h3>
 						<div class="app-item__image"></div>
 					</div>
 				</div>
-				<div class="col-md-4 app-item app-item__4">
+				<div class="col-md-4 app-item app-item__4" data-aos="fade-right" data-aos-delay="400">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">безналичная оплата</h3>
 						<div class="app-item__image"></div>
 					</div>
 				</div>
-				<div class="col-md-4 app-item app-item__5">
+				<div class="col-md-4 app-item app-item__5" data-aos="fade-right" data-aos-delay="500">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">обратная связь</h3>
 						<div class="app-item__image"></div>
 					</div>
 				</div>
-				<div class="col-md-4 app-item app-item__6">
+				<div class="col-md-4 app-item app-item__6" data-aos="fade-right" data-aos-delay="600">
 					<div class="app-item__wrapper">
 						<h3 class="app-item__title">разделить стоимость поездки</h3>
 						<div class="app-item__image"></div>
@@ -265,22 +269,24 @@
 
 	<section class="choise">
 		<div class="container">
-			<div class="label choise__label label--white">Возможности</div>
-			<h2 class="title choise__title">Выбор - отличная штука!</h2>
-			<h3 class="subtitle choise__subtitle">Закажите автомобиль, который подходит вам по стилю и бюджету</h3>
-			<img src="img/choise/car_img.png" alt="Image: Car" class="choise__image">
-			<p class="choise__desc">Машины на каждый день. <br> Лучше, быстрее и дешевле, чем такси</p>
+			<div class="label choise__label label--white" data-aos="zoom-in" data-aos-delay="100">Возможности</div>
+			<h2 class="title choise__title" data-aos="zoom-in" data-aos-delay="200">Выбор - отличная штука!</h2>
+			<h3 class="subtitle choise__subtitle" data-aos="zoom-in" data-aos-delay="300">Закажите автомобиль, который
+				подходит вам по стилю и бюджету</h3>
+			<img src="img/choise/car_img.png" alt="Image: Car" class="choise__image" data-aos="zoom-in" data-aos-delay="400">
+			<p class="choise__desc" data-aos="zoom-in" data-aos-delay="500">Машины на каждый день. <br> Лучше, быстрее и
+				дешевле, чем такси</p>
 		</div>
 		<!-- /.container -->
 	</section>
 
 	<section class="require" id="require">
 		<div class="container">
-			<div class="label require__label">Возможности</div>
-			<h2 class="title require__title">условия и требования</h2>
+			<div class="label require__label" data-aos="zoom-in" data-aos-delay="100">Возможности</div>
+			<h2 class="title require__title" data-aos="zoom-in" data-aos-delay="200">условия и требования</h2>
 
 			<div class="row">
-				<div class="col-md-6" id="own">
+				<div class="col-md-6" id="own" data-aos="fade-right" data-aos-delay="100">
 					<div class="require-wrapper">
 						<h3 class="require-list__title">УСЛОВИЯ: со своим авто:</h3>
 						<ul class="require-list">
@@ -295,7 +301,7 @@
 						<p class="require__desc">В день заработок составляет 7000-12000р + бонус 3000т рублей</p>
 					</div>
 				</div>
-				<div class="col-md-6" id="company">
+				<div class="col-md-6" id="company" data-aos="fade-right" data-aos-delay="200">
 					<div class="require-wrapper require-wrapper__ml">
 						<h3 class="require-list__title">УСЛОВИЯ: на авто компании:</h3>
 						<ul class="require-list">
@@ -306,7 +312,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
 					<div class="require-wrapper require-wrapper__mb warning">
 						<h3 class="require-list__title">ТРЕБОВАНИЕ:</h3>
 						<ul class="require-list">
@@ -318,7 +324,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-right" data-aos-delay="400">
 					<div class="require-wrapper require-wrapper__mb warning require-wrapper__ml">
 						<h3 class="require-list__title">ДОКУМЕНТЫ:</h3>
 						<ul class="require-list">
@@ -338,10 +344,11 @@
 
 	<section class="world">
 		<div class="container">
-			<div class="label world__label label--white">города</div>
-			<h2 class="title world__title">По всему миру</h2>
-			<h3 class="subtitle world__subtitle">Мы в вашем городе и по всему миру</h3>
-			<a href="#" class="world__more">посмотреть все города</a>
+			<div class="label world__label label--white" data-aos="zoom-in" data-aos-delay="100">города</div>
+			<h2 class="title world__title" data-aos="zoom-in" data-aos-delay="200">По всему миру</h2>
+			<h3 class="subtitle world__subtitle" data-aos="zoom-in" data-aos-delay="300">Мы в вашем городе и по всему миру
+			</h3>
+			<a href="#" class="world__more" data-aos="zoom-in" data-aos-delay="200">посмотреть все города</a>
 		</div>
 		<!-- /.container -->
 	</section>
@@ -351,16 +358,16 @@
 		<div class="footer-wrapper">
 			<div>
 				<div class="footer-social" id="contact">
-					<a href="#" class="footer-social__link">
+					<a href="#" class="footer-social__link" data-aos="fade-up" data-aos-delay="100">
 						<span class="icon-facebook"></span>
 					</a>
-					<a href="#" class="footer-social__link">
+					<a href="#" class="footer-social__link" data-aos="fade-up" data-aos-delay="200">
 						<span class="icon-twitter"></span>
 					</a>
-					<a href="#" class="footer-social__link">
+					<a href="#" class="footer-social__link" data-aos="fade-up" data-aos-delay="300">
 						<span class="icon-linkedin"></span>
 					</a>
-					<a href="#" class="footer-social__link">
+					<a href="#" class="footer-social__link" data-aos="fade-up" data-aos-delay="400">
 						<span class="icon-instagram"></span>
 					</a>
 				</div>
@@ -369,34 +376,34 @@
 			<div>
 				<div class="footer-nav">
 					<ul class="footer-first">
-						<li class="footer-first__item">
+						<li class="footer-first__item" data-aos="zoom-in" data-aos-delay="100">
 							<a href="#" class="footer-first__link">на главную</a>
 						</li>
-						<li class="footer-first__item">
+						<li class="footer-first__item" data-aos="zoom-in" data-aos-delay="150">
 							<a href="#" class="footer-first__link">города</a>
 						</li>
-						<li class="footer-first__item">
+						<li class="footer-first__item" data-aos="zoom-in" data-aos-delay="200">
 							<a href="#" class="footer-first__link">для водителей</a>
 						</li>
 					</ul>
 					<ul class="footer-second">
-						<li class="footer-second__item">
+						<li class="footer-second__item" data-aos="zoom-in" data-aos-delay="200">
 							<a href="#" class="footer-second__link">центр поддержки</a>
 						</li>
-						<li class="footer-second__item">
+						<li class="footer-second__item" data-aos="zoom-in" data-aos-delay="250">
 							<a href="#" class="footer-second__link">вакансии</a>
 						</li>
-						<li class="footer-second__item">
+						<li class="footer-second__item" data-aos="zoom-in" data-aos-delay="300">
 							<a href="#" class="footer-second__link">разработчики</a>
 						</li>
-						<li class="footer-second__item">
+						<li class="footer-second__item" data-aos="zoom-in" data-aos-delay="350">
 							<a href="#" class="footer-second__link">блог</a>
 						</li>
-						<li class="footer-second__item">
+						<li class="footer-second__item" data-aos="zoom-in" data-aos-delay="400">
 							<a href="#" class="footer-second__link">о нас</a>
 						</li>
 					</ul>
-					<div class="footer-lang">
+					<div class="footer-lang" data-aos="zoom-in" data-aos-delay="200" data-aos-offset="10">
 						<a href="#" class="footer-lang__link">Русский</a>
 					</div>
 				</div>
@@ -405,20 +412,45 @@
 			<div>
 				<div class="footer-download">
 					<a href="#" class="footer-download__link">
-						<img src="img/footer/download/app_store.png" alt="Icon: app_store" class="footer-download__image">
+						<img src="img/footer/download/app_store.png" alt="Icon: app_store" class="footer-download__image"
+							data-aos="fade-up" data-aos-delay="100">
 					</a>
 					<a href="#" class="footer-download__link">
-						<img src="img/footer/download/google_play.png" alt="Icon: google_play" class="footer-download__image">
+						<img src="img/footer/download/google_play.png" alt="Icon: google_play" class="footer-download__image"
+							data-aos="fade-up" data-aos-delay="200">
 					</a>
 					<a href="" class="footer-download__link">
-						<img src="img/footer/download/windows_store.png" alt="Icon: windows_store" class="footer-download__image">
+						<img src="img/footer/download/windows_store.png" alt="Icon: windows_store" class="footer-download__image"
+							data-aos="fade-up" data-aos-delay="300">
 					</a>
 				</div>
 			</div>
 		</div>
 		<!-- /.footer-wrapper -->
 	</footer>
+
+	<div class="modal hide">
+		<div class="container">
+			<div class="modal-dialog">
+				<div class="modal-close" data-close='modal'>
+					<img src="img/close_icon.svg" alt="Icon: Close">
+				</div>
+				<form action="#" class="modal-form">
+					<label for="name" class="modal-form__name-label">Введите имя</label>
+					<input type="text" class="input modal-form__name" id="name" placeholder="Ваше имя" required>
+					<label for="email" class="modal-form__email-label">Введите эл. почту</label>
+					<input type="email" class="input modal-form__email" id="email" placeholder="Например: ivanov@mail.ru"
+						required>
+					<button type="submit" class="button modal-form__submit">Отправить заявку</button>
+				</form>
+			</div>
+			<!-- /.modal-dialog -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.modal -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

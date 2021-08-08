@@ -478,8 +478,8 @@ nav {
   position: absolute;
   bottom: 49px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
   font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
@@ -1042,6 +1042,119 @@ nav {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .input {
+    width: 260px !important;
+  }
+  .modal-dialog {
+    width: 300px !important;
+  }
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 400px;
+  height: 380px;
+  border-radius: 5px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 101;
+}
+
+.modal-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-form__name-label, .modal-form__email-label {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.modal-form__name {
+  margin-bottom: 15px;
+}
+
+.modal-form__email {
+  margin-bottom: 30px;
+}
+
+.modal-form__submit {
+  width: 210px !important;
+  height: 52px !important;
+  padding: 17px 20px !important;
+  font-size: 17px !important;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -1049,6 +1162,14 @@ body {
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.input {
+  width: 300px;
+  padding: 20px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5);
+  box-shadow: 0px 1px 20px -5px rgba(30, 60, 80, 0.5);
 }
 
 .button {
